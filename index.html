@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  English: Document type declaration for HTML5
+  العربية: إعلان نوع المستند لـ HTML5
+-->
+<head>
+  <meta charset="UTF-8" />
+  <!--
+    English: Character encoding set to UTF-8 for universal character support
+    العربية: تعيين ترميز الأحرف إلى UTF-8 لدعم جميع الأحرف
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    English: Responsive viewport settings for mobile devices
+    العربية: إعدادات العرض المتجاوب للأجهزة المحمولة
+  -->
+  <title>ZaidanOne - Your Trusted Partner for Managed Services</title>
+  <!--
+    English: Page title shown in browser tab
+    العربية: عنوان الصفحة المعروض في تبويب المتصفح
+  -->
+
+  <!-- Google Fonts: Importing a modern, clean font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!--
+    English: Import Google Fonts 'Inter' for typography
+    العربية: استيراد خطوط جوجل 'Inter' للطباعة
+  -->
+
+  <!-- Tailwind CSS CDN for utility-first styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--
+    English: Include Tailwind CSS via CDN for styling
+    العربية: تضمين Tailwind CSS عبر CDN للتصميم
+  -->
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!--
+    English: Include Font Awesome for icon usage
+    العربية: تضمين Font Awesome لاستخدام الأيقونات
+  -->
+
+  <!-- Custom styles for smooth font rendering -->
+  <style>
+    /* English: Apply the imported font to the body */
+    /* العربية: تطبيق الخط المستورد على الجسم */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!--
+    English: Main body with light gray background and dark text
+    العربية: الجسم الرئيسي بخلفية رمادية فاتحة ونص داكن
+  -->
+
+  <!-- Header with navigation and language selector -->
+  <header class="bg-white shadow-md">
+    <!--
+      English: Header section with white background and shadow
+      العربية: قسم الرأس بخلفية بيضاء وظل
+    -->
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!--
+        English: Container to center content with padding
+        العربية: حاوية لمركزة المحتوى مع الحشو
+      -->
+      <a href="index.html" class="text-2xl font-bold text-blue-700">
+        <!--
+          English: Website logo or name linking to homepage
+          العربية: شعار الموقع أو الاسم مع رابط للصفحة الرئيسية
+        -->
+        ZaidanOne
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="hidden md:flex space-x-6 mr-6">
+        <!--
+          English: Navigation menu links
+          العربية: روابط قائمة التنقل
+        -->
+        <a href="index.html" class="text-gray-700 hover:text-blue-700 font-semibold">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-700 font-semibold">Our Services</a>
+        <a href="pricing.html" class="text-gray-700 hover:text-blue-700 font-semibold">Pricing</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-700 font-semibold">About Us</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-semibold">Contact Us</a>
+      </nav>
+
+      <!-- Language selector dropdown -->
+      <select
+        id="language-select"
+        aria-label="Select Language"
+        class="border border-gray-300 rounded-md p-2"
+      >
+        <!--
+          English: Dropdown for language selection
+          العربية: قائمة منسدلة لاختيار اللغة
+        -->
+        <option value="en" selected>English</option>
+        <option value="ar">العربية</option>
+        <option value="fr">Français</option>
+        <option value="tr">Türkçe</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <section
+    class="bg-blue-700 text-white text-center py-20 px-4"
+    id="banner"
+  >
+    <!--
+      English: Banner with tagline
+      العربية: بانر مع الشعار
+    -->
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+      Securing Your Future in the Digital Age.
+      <!--
+        English: Main tagline text
+        العربية: نص الشعار الرئيسي
+      -->
+    </h1>
+    <p class="text-lg max-w-3xl mx-auto">
+      Empower your business with cutting-edge managed cybersecurity services designed to protect your systems, data, and users from evolving threats.
+      <!--
+        English: Banner description text
+        العربية: نص وصف البانر
+      -->
+    </p>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="container mx-auto py-16 px-4" id="introduction">
+    <!--
+      English: Introduction about ZaidanOne's commitment
+      العربية: مقدمة عن التزام زيدان ون
+    -->
+    <h2 class="text-3xl font-semibold mb-6 text-center">
+      About ZaidanOne
+      <!--
+        English: Section heading
+        العربية: عنوان القسم
+      -->
+    </h2>
+    <p class="max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
+      ZaidanOne is dedicated to delivering excellence in managed cybersecurity services, empowering businesses to stay secure and resilient in an ever-changing digital landscape.
+      <!--
+        English: Introduction paragraph
+        العربية: فقرة المقدمة
+      -->
+    </p>
+  </section>
+
+  <!-- Services Highlight Section -->
+  <section class="bg-white py-16 px-4" id="services-highlight">
+    <!--
+      English: Highlighting key services at a glance
+      العربية: إبراز الخدمات الرئيسية بنظرة سريعة
+    -->
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-semibold mb-10 text-center">
+        Our Services at a Glance
+        <!--
+          English: Section heading
+          العربية: عنوان القسم
+        -->
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <i class="fas fa-shield-alt text-blue-700 text-4xl mb-4"></i>
+          <!--
+            English: Icon representing Managed Security Services
+            العربية: أيقونة تمثل خدمات الأمن المُدارة
+          -->
+          <h3 class="text-xl font-semibold mb-2">Managed Security Services (MSSP)</h3>
+          <!--
+            English: Service title
+            العربية: عنوان الخدمة
+          -->
+          <p class="text-gray-700">
+            Continuous monitoring and management of security systems to safeguard your organization 24/7.
+            <!--
+              English: Service description
+              العربية: وصف الخدمة
+            -->
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <i class="fas fa-bolt text-blue-700 text-4xl mb-4"></i>
+          <!--
+            English: Icon representing SIEM
+            العربية: أيقونة تمثل إدارة معلومات وأحداث الأمان
+          -->
+          <h3 class="text-xl font-semibold mb-2">Security Information and Event Management (SIEM)</h3>
+          <!--
+            English: Service title
+            العربية: عنوان الخدمة
+          -->
+          <p class="text-gray-700">
+            Real-time analysis of security alerts to address threats proactively.
+            <!--
+              English: Service description
+              العربية: وصف الخدمة
+            -->
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <i class="fas fa-laptop-code text-blue-700 text-4xl mb-4"></i>
+          <!--
+            English: Icon representing Endpoint Detection and Response
+            العربية: أيقونة تمثل الكشف والاستجابة للنقاط الطرفية
+          -->
+          <h3 class="text-xl font-semibold mb-2">Endpoint Detection and Response (EDR)</h3>
+          <!--
+            English: Service title
+            العربية: عنوان الخدمة
+          -->
+          <p class="text-gray-700">
+            Advanced protection for devices like laptops, smartphones, and more.
+            <!--
+              English: Service description
+              العربية: وصف الخدمة
+            -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8 mt-16">
+    <!--
+      English: Footer section with dark background and light text
+      العربية: قسم التذييل بخلفية داكنة ونص فاتح
+    -->
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <!--
+        English: Container for footer content
+        العربية: حاوية لمحتوى التذييل
+      -->
+      <div class="mb-4 md:mb-0">
+        <a href="#" class="text-white font-bold text-lg">ZaidanOne</a>
+        <!--
+          English: Footer logo or name
+          العربية: شعار أو اسم التذييل
+        -->
+      </div>
+      <div class="flex space-x-6">
+        <!-- Social media links -->
+        <a href="#" aria-label="Facebook" class="hover:text-white">
+          <i class="fab fa-facebook-f"></i>
+          <!--
+            English: Facebook icon link
+            العربية: رابط أيقونة فيسبوك
+          -->
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:text-white">
+          <i class="fab fa-twitter"></i>
+          <!--
+            English: Twitter icon link
+            العربية: رابط أيقونة تويتر
+          -->
+        </a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-white">
+          <i class="fab fa-linkedin-in"></i>
+          <!--
+            English: LinkedIn icon link
+            العربية: رابط أيقونة لينكدإن
+          -->
+        </a>
+      </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right text-sm">
+        © 2025 ZaidanOne - Delivering Excellence in Managed Services.
+        <!--
+          English: Copyright message
+          العربية: رسالة حقوق النشر
+        -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Chat Support Widget -->
+  <div id="chat-widget" class="fixed bottom-4 right-4 w-80 max-w-full bg-white rounded-lg shadow-lg border border-gray-300 hidden flex-col">
+    <!--
+      English: Chat widget container, initially hidden
+      العربية: حاوية أداة الدردشة، مخفية في البداية
+    -->
+    <div class="bg-blue-700 text-white p-4 rounded-t-lg flex justify-between items-center">
+      <h3 class="font-semibold">AI Chat Support</h3>
+      <!--
+        English: Chat widget header title
+        العربية: عنوان رأس أداة الدردشة
+      -->
+      <button id="chat-close-btn" aria-label="Close Chat" class="text-white hover:text-gray-300">
+        <i class="fas fa-times"></i>
+        <!--
+          English: Close button icon
+          العربية: أيقونة زر الإغلاق
+        -->
+      </button>
+    </div>
+    <div id="chat-messages" class="p-4 h-64 overflow-y-auto text-gray-900 bg-gray-100">
+      <!--
+        English: Container for chat messages
+        العربية: حاوية لرسائل الدردشة
+      -->
+      <p class="text-gray-500 italic">Hello! How can I assist you today?</p>
+      <!--
+        English: Initial greeting message
+        العربية: رسالة الترحيب الأولية
+      -->
+    </div>
+    <form id="chat-form" class="flex border-t border-gray-300">
+      <!--
+        English: Chat input form
+        العربية: نموذج إدخال الدردشة
+      -->
+      <input
+        type="text"
+        id="chat-input"
+        placeholder="Type your message..."
+        aria-label="Type your message"
+        class="flex-grow p-2 border-none focus:outline-none"
+        autocomplete="off"
+      />
+      <button type="submit" class="bg-blue-700 text-white px-4">
+        <i class="fas fa-paper-plane"></i>
+        <!--
+          English: Send button icon
+          العربية: أيقونة زر الإرسال
+        -->
+      </button>
+    </form>
+  </div>
+
+  <!-- Chat Toggle Button -->
+  <button
+    id="chat-toggle-btn"
+    aria-label="Open Chat"
+    class="fixed bottom-4 right-4 bg-blue-700 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  >
+    <i class="fas fa-comments"></i>
+    <!--
+      English: Chat toggle button icon
+      العربية: أيقونة زر تبديل الدردشة
+    -->
+  </button>
+
+  <!-- Script for language switching and chat widget -->
+  <script src="main.js"></script>
+  <!--
+    English: Link to external JavaScript file for language switching and chat widget functionality
+    العربية: رابط لملف جافا سكريبت خارجي لوظيفة تبديل اللغة وأداة الدردشة
+  -->
+</body>
+</html>
