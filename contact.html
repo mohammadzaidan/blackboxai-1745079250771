@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  English: Document type declaration for HTML5
+  العربية: إعلان نوع المستند لـ HTML5
+-->
+<head>
+  <meta charset="UTF-8" />
+  <!--
+    English: Character encoding set to UTF-8 for universal character support
+    العربية: تعيين ترميز الأحرف إلى UTF-8 لدعم جميع الأحرف
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    English: Responsive viewport settings for mobile devices
+    العربية: إعدادات العرض المتجاوب للأجهزة المحمولة
+  -->
+  <title>ZaidanOne - Contact Us</title>
+  <!--
+    English: Page title shown in browser tab
+    العربية: عنوان الصفحة المعروض في تبويب المتصفح
+  -->
+
+  <!-- Google Fonts: Importing a modern, clean font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!--
+    English: Import Google Fonts 'Inter' for typography
+    العربية: استيراد خطوط جوجل 'Inter' للطباعة
+  -->
+
+  <!-- Tailwind CSS CDN for utility-first styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--
+    English: Include Tailwind CSS via CDN for styling
+    العربية: تضمين Tailwind CSS عبر CDN للتصميم
+  -->
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!--
+    English: Include Font Awesome for icon usage
+    العربية: تضمين Font Awesome لاستخدام الأيقونات
+  -->
+
+  <!-- Custom styles for smooth font rendering -->
+  <style>
+    /* English: Apply the imported font to the body */
+    /* العربية: تطبيق الخط المستورد على الجسم */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!--
+    English: Main body with light gray background and dark text
+    العربية: الجسم الرئيسي بخلفية رمادية فاتحة ونص داكن
+  -->
+
+  <!-- Header with navigation and language selector -->
+  <header class="bg-white shadow-md">
+    <!--
+      English: Header section with white background and shadow
+      العربية: قسم الرأس بخلفية بيضاء وظل
+    -->
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!--
+        English: Container to center content with padding
+        العربية: حاوية لمركزة المحتوى مع الحشو
+      -->
+      <a href="index.html" class="text-2xl font-bold text-blue-700">
+        <!--
+          English: Website logo or name linking to homepage
+          العربية: شعار الموقع أو الاسم مع رابط للصفحة الرئيسية
+        -->
+        ZaidanOne
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="hidden md:flex space-x-6 mr-6">
+        <!--
+          English: Navigation menu links
+          العربية: روابط قائمة التنقل
+        -->
+        <a href="index.html" class="text-gray-700 hover:text-blue-700 font-semibold">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-700 font-semibold">Our Services</a>
+        <a href="pricing.html" class="text-gray-700 hover:text-blue-700 font-semibold">Pricing</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-700 font-semibold">About Us</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-semibold">Contact Us</a>
+        <a href="login.html" class="text-gray-700 hover:text-blue-700 font-semibold">Login</a>
+      </nav>
+
+      <!-- Language selector dropdown -->
+      <select
+        id="language-select"
+        aria-label="Select Language"
+        class="border border-gray-300 rounded-md p-2"
+      >
+        <!--
+          English: Dropdown for language selection
+          العربية: قائمة منسدلة لاختيار اللغة
+        -->
+        <option value="en" selected>English</option>
+        <option value="ar">العربية</option>
+        <option value="fr">Français</option>
+        <option value="tr">Türkçe</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="container mx-auto py-16 px-4 max-w-lg" id="contact-form">
+    <!--
+      English: Contact form section
+      العربية: قسم نموذج الاتصال
+    -->
+    <h1 class="text-4xl font-extrabold mb-8 text-center">
+      Contact Us
+      <!--
+        English: Main heading for contact page
+        العربية: العنوان الرئيسي لصفحة الاتصال
+      -->
+    </h1>
+    <form enctype="multipart/form-data">
+      <!--
+        English: Contact form element with multipart encoding for file uploads
+        العربية: عنصر نموذج الاتصال مع ترميز متعدد الأجزاء لتحميل الملفات
+      -->
+      <label for="name" class="block mb-2 font-medium">Name</label>
+      <!--
+        English: Label for name input
+        العربية: تسمية لحقل الاسم
+      -->
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        required
+      />
+      <!--
+        English: Input field for name
+        العربية: حقل إدخال للاسم
+      -->
+
+      <label for="email" class="block mb-2 font-medium">Email</label>
+      <!--
+        English: Label for email input
+        العربية: تسمية لحقل البريد الإلكتروني
+      -->
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        required
+      />
+      <!--
+        English: Input field for email
+        العربية: حقل إدخال للبريد الإلكتروني
+      -->
+
+      <label for="interest" class="block mb-2 font-medium">Area of Interest</label>
+      <!--
+        English: Label for area of interest dropdown
+        العربية: تسمية لقائمة اختيار مجال الاهتمام
+      -->
+      <select
+        id="interest"
+        name="interest"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        required
+      >
+        <option value="" disabled selected>Select an option</option>
+        <option value="mssp">Managed Security Services (MSSP)</option>
+        <option value="siem">Security Information and Event Management (SIEM)</option>
+        <option value="edr">Endpoint Detection and Response (EDR)</option>
+        <option value="cloud">Cloud Security Services</option>
+        <option value="iam">Identity and Access Management (IAM)</option>
+        <option value="dlp">Data Loss Prevention (DLP)</option>
+        <option value="pentest">Penetration Testing</option>
+        <option value="bdr">Backup and Disaster Recovery (BDR)</option>
+      </select>
+      <!--
+        English: Dropdown list for selecting area of interest
+        العربية: قائمة منسدلة لاختيار مجال الاهتمام
+      -->
+
+      <label for="message" class="block mb-2 font-medium">Message</label>
+      <!--
+        English: Label for message textarea
+        العربية: تسمية لحقل الرسالة
+      -->
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        required
+      ></textarea>
+      <!--
+        English: Textarea for user message
+        العربية: حقل نصي لرسالة المستخدم
+      -->
+
+      <!-- File upload for attachment -->
+      <label for="attachment" class="block mb-2 font-medium">Attachment</label>
+      <!--
+        English: Label for file attachment input
+        العربية: تسمية لحقل تحميل المرفقات
+      -->
+      <input
+        type="file"
+        id="attachment"
+        name="attachment"
+        class="w-full border border-gray-300 rounded-md p-2 mb-4"
+        accept=".pdf,.doc,.docx,.jpg,.png,.jpeg"
+      />
+      <!--
+        English: File input for attachments with accepted file types
+        العربية: حقل تحميل ملفات للمرفقات مع أنواع الملفات المقبولة
+      -->
+
+      <!-- File upload for logo -->
+      <label for="logo" class="block mb-2 font-medium">Upload Logo</label>
+      <!--
+        English: Label for logo upload input
+        العربية: تسمية لحقل تحميل الشعار
+      -->
+      <input
+        type="file"
+        id="logo"
+        name="logo"
+        class="w-full border border-gray-300 rounded-md p-2 mb-6"
+        accept=".jpg,.png,.jpeg,.svg"
+      />
+      <!--
+        English: File input for logo upload with accepted image types
+        العربية: حقل تحميل شعار مع أنواع الصور المقبولة
+      -->
+
+      <button
+        type="submit"
+        class="w-full bg-blue-700 text-white font-semibold py-2 rounded-md hover:bg-blue-800 transition-colors"
+      >
+        Send Message
+        <!--
+          English: Submit button text
+          العربية: نص زر الإرسال
+        -->
+      </button>
+    </form>
+
+    <!-- 24/7 Customer Call Option -->
+    <div class="mt-8 text-center">
+      <p>
+        Need immediate assistance? Call us 24/7:
+        <!--
+          English: Text for 24/7 customer call option
+          العربية: نص لخيار الاتصال بخدمة العملاء 24/7
+        -->
+        <a href="tel:+123456789" class="text-blue-700 font-semibold hover:underline">+1 (234) 567-89</a>
+        <!--
+          English: Clickable phone number link
+          العربية: رابط رقم الهاتف القابل للنقر
+        -->
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8 mt-16">
+    <!--
+      English: Footer section with dark background and light text
+      العربية: قسم التذييل بخلفية داكنة ونص فاتح
+    -->
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <!--
+        English: Container for footer content
+        العربية: حاوية لمحتوى التذييل
+      -->
+      <div class="mb-4 md:mb-0">
+        <a href="#" class="text-white font-bold text-lg">ZaidanOne</a>
+        <!--
+          English: Footer logo or name
+          العربية: شعار أو اسم التذييل
+        -->
+      </div>
+      <div class="flex space-x-6">
+        <!-- Social media links -->
+        <a href="#" aria-label="Facebook" class="hover:text-white">
+          <i class="fab fa-facebook-f"></i>
+          <!--
+            English: Facebook icon link
+            العربية: رابط أيقونة فيسبوك
+          -->
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:text-white">
+          <i class="fab fa-twitter"></i>
+          <!--
+            English: Twitter icon link
+            العربية: رابط أيقونة تويتر
+          -->
+        </a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-white">
+          <i class="fab fa-linkedin-in"></i>
+          <!--
+            English: LinkedIn icon link
+            العربية: رابط أيقونة لينكدإن
+          -->
+        </a>
+      </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right text-sm">
+        © 2025 ZaidanOne - Delivering Excellence in Managed Services.
+        <!--
+          English: Copyright message
+          العربية: رسالة حقوق النشر
+        -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for language switching -->
+  <script src="main.js"></script>
+  <!--
+    English: Link to external JavaScript file for language switching functionality
+    العربية: رابط لملف جافا سكريبت خارجي لوظيفة تبديل اللغة
+  -->
+</body>
+</html>
