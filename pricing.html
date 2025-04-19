@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  English: Document type declaration for HTML5
+  العربية: إعلان نوع المستند لـ HTML5
+-->
+<head>
+  <meta charset="UTF-8" />
+  <!--
+    English: Character encoding set to UTF-8 for universal character support
+    العربية: تعيين ترميز الأحرف إلى UTF-8 لدعم جميع الأحرف
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    English: Responsive viewport settings for mobile devices
+    العربية: إعدادات العرض المتجاوب للأجهزة المحمولة
+  -->
+  <title>ZaidanOne - Pricing</title>
+  <!--
+    English: Page title shown in browser tab
+    العربية: عنوان الصفحة المعروض في تبويب المتصفح
+  -->
+
+  <!-- Google Fonts: Importing a modern, clean font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!--
+    English: Import Google Fonts 'Inter' for typography
+    العربية: استيراد خطوط جوجل 'Inter' للطباعة
+  -->
+
+  <!-- Tailwind CSS CDN for utility-first styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--
+    English: Include Tailwind CSS via CDN for styling
+    العربية: تضمين Tailwind CSS عبر CDN للتصميم
+  -->
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!--
+    English: Include Font Awesome for icon usage
+    العربية: تضمين Font Awesome لاستخدام الأيقونات
+  -->
+
+  <!-- Custom styles for smooth font rendering -->
+  <style>
+    /* English: Apply the imported font to the body */
+    /* العربية: تطبيق الخط المستورد على الجسم */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!--
+    English: Main body with light gray background and dark text
+    العربية: الجسم الرئيسي بخلفية رمادية فاتحة ونص داكن
+  -->
+
+  <!-- Header with navigation and language selector -->
+  <header class="bg-white shadow-md">
+    <!--
+      English: Header section with white background and shadow
+      العربية: قسم الرأس بخلفية بيضاء وظل
+    -->
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!--
+        English: Container to center content with padding
+        العربية: حاوية لمركزة المحتوى مع الحشو
+      -->
+      <a href="index.html" class="text-2xl font-bold text-blue-700">
+        <!--
+          English: Website logo or name linking to homepage
+          العربية: شعار الموقع أو الاسم مع رابط للصفحة الرئيسية
+        -->
+        ZaidanOne
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="hidden md:flex space-x-6 mr-6">
+        <!--
+          English: Navigation menu links
+          العربية: روابط قائمة التنقل
+        -->
+        <a href="index.html" class="text-gray-700 hover:text-blue-700 font-semibold">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-700 font-semibold">Our Services</a>
+        <a href="pricing.html" class="text-gray-700 hover:text-blue-700 font-semibold">Pricing</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-700 font-semibold">About Us</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-semibold">Contact Us</a>
+        <a href="login.html" class="text-gray-700 hover:text-blue-700 font-semibold">Login</a>
+      </nav>
+
+      <!-- Language selector dropdown -->
+      <select
+        id="language-select"
+        aria-label="Select Language"
+        class="border border-gray-300 rounded-md p-2"
+      >
+        <!--
+          English: Dropdown for language selection
+          العربية: قائمة منسدلة لاختيار اللغة
+        -->
+        <option value="en" selected>English</option>
+        <option value="ar">العربية</option>
+        <option value="fr">Français</option>
+        <option value="tr">Türkçe</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Pricing Section -->
+  <main class="container mx-auto py-16 px-4" id="pricing">
+    <!--
+      English: Pricing plans section
+      العربية: قسم خطط التسعير
+    -->
+    <h1 class="text-4xl font-extrabold mb-12 text-center">
+      Pricing Plans
+      <!--
+        English: Main heading for pricing page
+        العربية: العنوان الرئيسي لصفحة التسعير
+      -->
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Basic Plan -->
+      <div class="bg-white p-8 rounded-lg shadow text-center">
+        <h2 class="text-2xl font-semibold mb-4">Basic</h2>
+        <!--
+          English: Basic pricing plan title
+          العربية: عنوان خطة التسعير الأساسية
+        -->
+        <p class="text-4xl font-extrabold mb-4">$49<span class="text-base font-normal">/month</span></p>
+        <!--
+          English: Basic plan price
+          العربية: سعر الخطة الأساسية
+        -->
+        <ul class="text-gray-700 mb-6 text-left">
+          <li>Managed Security Services (MSSP)</li>
+          <li>Security Information and Event Management (SIEM)</li>
+          <li>Endpoint Detection and Response (EDR)</li>
+        </ul>
+        <!--
+          English: Features included in Basic plan
+          العربية: الميزات المشمولة في الخطة الأساسية
+        -->
+        <button class="bg-blue-700 text-white py-2 px-6 rounded-md hover:bg-blue-800 transition-colors">
+          Choose Basic
+          <!--
+            English: Button text to select Basic plan
+            العربية: نص الزر لاختيار الخطة الأساسية
+          -->
+        </button>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="bg-white p-8 rounded-lg shadow text-center">
+        <h2 class="text-2xl font-semibold mb-4">Standard</h2>
+        <!--
+          English: Standard pricing plan title
+          العربية: عنوان خطة التسعير القياسية
+        -->
+        <p class="text-4xl font-extrabold mb-4">$99<span class="text-base font-normal">/month</span></p>
+        <!--
+          English: Standard plan price
+          العربية: سعر الخطة القياسية
+        -->
+        <ul class="text-gray-700 mb-6 text-left">
+          <li>Includes Basic Plan Features</li>
+          <li>Cloud Security Services</li>
+          <li>Identity and Access Management (IAM)</li>
+          <li>Data Loss Prevention (DLP)</li>
+        </ul>
+        <!--
+          English: Features included in Standard plan
+          العربية: الميزات المشمولة في الخطة القياسية
+        -->
+        <button class="bg-blue-700 text-white py-2 px-6 rounded-md hover:bg-blue-800 transition-colors">
+          Choose Standard
+          <!--
+            English: Button text to select Standard plan
+            العربية: نص الزر لاختيار الخطة القياسية
+          -->
+        </button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="bg-white p-8 rounded-lg shadow text-center">
+        <h2 class="text-2xl font-semibold mb-4">Premium</h2>
+        <!--
+          English: Premium pricing plan title
+          العربية: عنوان خطة التسعير المميزة
+        -->
+        <p class="text-4xl font-extrabold mb-4">$199<span class="text-base font-normal">/month</span></p>
+        <!--
+          English: Premium plan price
+          العربية: سعر الخطة المميزة
+        -->
+        <ul class="text-gray-700 mb-6 text-left">
+          <li>Includes Standard Plan Features</li>
+          <li>Penetration Testing</li>
+          <li>Backup and Disaster Recovery (BDR)</li>
+          <li>Priority Support</li>
+        </ul>
+        <!--
+          English: Features included in Premium plan
+          العربية: الميزات المشمولة في الخطة المميزة
+        -->
+        <button class="bg-blue-700 text-white py-2 px-6 rounded-md hover:bg-blue-800 transition-colors">
+          Choose Premium
+          <!--
+            English: Button text to select Premium plan
+            العربية: نص الزر لاختيار الخطة المميزة
+          -->
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8 mt-16">
+    <!--
+      English: Footer section with dark background and light text
+      العربية: قسم التذييل بخلفية داكنة ونص فاتح
+    -->
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <!--
+        English: Container for footer content
+        العربية: حاوية لمحتوى التذييل
+      -->
+      <div class="mb-4 md:mb-0">
+        <a href="#" class="text-white font-bold text-lg">ZaidanOne</a>
+        <!--
+          English: Footer logo or name
+          العربية: شعار أو اسم التذييل
+        -->
+      </div>
+      <div class="flex space-x-6">
+        <!-- Social media links -->
+        <a href="#" aria-label="Facebook" class="hover:text-white">
+          <i class="fab fa-facebook-f"></i>
+          <!--
+            English: Facebook icon link
+            العربية: رابط أيقونة فيسبوك
+          -->
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:text-white">
+          <i class="fab fa-twitter"></i>
+          <!--
+            English: Twitter icon link
+            العربية: رابط أيقونة تويتر
+          -->
+        </a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-white">
+          <i class="fab fa-linkedin-in"></i>
+          <!--
+            English: LinkedIn icon link
+            العربية: رابط أيقونة لينكدإن
+          -->
+        </a>
+      </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right text-sm">
+        © 2025 ZaidanOne - Delivering Excellence in Managed Services.
+        <!--
+          English: Copyright message
+          العربية: رسالة حقوق النشر
+        -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for language switching -->
+  <script src="main.js"></script>
+  <!--
+    English: Link to external JavaScript file for language switching functionality
+    العربية: رابط لملف جافا سكريبت خارجي لوظيفة تبديل اللغة
+  -->
+</body>
+</html>
